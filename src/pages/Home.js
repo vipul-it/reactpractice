@@ -1,12 +1,26 @@
-import React from "react";
-import AllPages from "../components/common/AllPages";
+import React, { useState } from "react";
 
-
+import { popularCitiesInIndia } from "../constant";
 
 const Home = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredCities = popularCitiesInIndia.filter((city) =>
+    city.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div>
-     <AllPages name="Home"/>
+      <input
+        type="text"
+        placeholder="Search city"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+
+      {filteredCities.map((d) => {
+        return <div key={d.id}>{d.name}</div>;
+      })}
     </div>
   );
 };

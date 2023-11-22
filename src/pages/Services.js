@@ -1,8 +1,9 @@
 import React from 'react'
+import AllPages from '../components/common/AllPages'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <div><AllPages name="Services" /></div>
   )
 }
 

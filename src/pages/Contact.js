@@ -1,8 +1,9 @@
 import React from 'react'
+import AllPages from '../components/common/AllPages'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div><AllPages name="Contact" /></div>
   )
 }
 
