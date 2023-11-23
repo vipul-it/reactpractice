@@ -8,9 +8,7 @@ const SearchFilter = () => {
   const filteredCities = popularCitiesInIndia.filter((city, name) =>
     city.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
-  const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
-  };
+
 
   return (
     <div>

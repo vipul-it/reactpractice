@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ImageCard from '../components/common/ImageCard';
 
 
 const GetApiFetch = () => {
@@ -36,13 +37,29 @@ const GetApiFetch = () => {
   if (!data) {
     return <div>No data available</div>;
   }
+  console.log(data);
 
   // Render your data here
   return (
     <div>
       <h1>My Data</h1>
       {/* Render fetched data */}
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
+     
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-4">{
+        data.map((d)=>{
+          return (
+            <>
+            <div>
+               <ImageCard title={d.title} url={d.url} id={d.id}/>
+            </div>
+           
+            </>
+          )
+        })
+      }
+        </div> 
+     
     </div>
   );
 };
