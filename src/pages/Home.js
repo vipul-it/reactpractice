@@ -1,27 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { popularCitiesInIndia } from "../constant";
 
 const Home = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const filteredCities = popularCitiesInIndia.filter((city) =>
-    city.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Search city"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-
-      {filteredCities.map((d) => {
-        return <div key={d.id}>{d.name}</div>;
-      })}
-    </div>
+    <>
+      <div className="grid grid-cols-4 gap-2 border-2 px-10">
+        <div className="">
+          <ol className="list-disc ">
+            <li className="text-gray-700 my-2">
+              <Link to="/SearchFilter">Search Filter</Link>
+            </li>
+            <li className="text-gray-700 my-2">
+              <Link to="/GetApi">GetApi</Link>
+            </li>
+            <li className="text-gray-700 my-2">
+              <Link to="/GetApiFetch">Get Api Fetch</Link>
+            </li>
+            <li className="text-gray-700 my-2">
+              <Link to="/SearchFilter">SearchFilter</Link>
+            </li>
+           
+          </ol>
+        </div>
+      </div>
+    </>
   );
 };
 
