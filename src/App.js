@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import SearchFilter from "./pages/SearchFilter";
 import GetApi from "./pages/GetApi";
 import GetApiFetch from "./pages/GetApiFetch";
+import GetApiAxios from "./pages/GetApiAxios";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/searchFilter" element={<SearchFilter />} />
           <Route path="/GetApi" element={<GetApi />} />
           <Route path="/GetApiFetch" element={<GetApiFetch />} />
+          <Route path="/GetApiAxios" element={<GetApiAxios />} />
         </Routes>
       </BrowserRouter>
     </>
