@@ -12,6 +12,9 @@ const Home = () => {
               <Link to="/SearchFilter">Search Filter</Link>
             </li>
             <li className="text-gray-700 my-2">
+              <Link to="/GetApiAxios">GetApiAxios</Link>
+            </li>
+            <li className="text-gray-700 my-2">
               <Link to="/GetApi">GetApi</Link>
             </li>
             <li className="text-gray-700 my-2">
