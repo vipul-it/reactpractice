@@ -11,9 +11,6 @@ const GetApiFetch = () => {
     const fetchData = async () => {
       try {
         const response = await fetch('https://jsonplaceholder.typicode.com/photos'); // Replace with your API endpoint
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
         const result = await response.json();
         setData(result);
       } catch (error) {

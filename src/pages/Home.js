@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const Home = () => {
   return (
     <>
@@ -12,18 +11,14 @@ const Home = () => {
               <Link to="/SearchFilter">Search Filter</Link>
             </li>
             <li className="text-gray-700 my-2">
-              <Link to="/GetApiAxios">GetApiAxios</Link>
-            </li>
-            <li className="text-gray-700 my-2">
               <Link to="/GetApi">GetApi</Link>
             </li>
             <li className="text-gray-700 my-2">
               <Link to="/GetApiFetch">Get Api Fetch</Link>
             </li>
             <li className="text-gray-700 my-2">
-              <Link to="/SearchFilter">SearchFilter</Link>
+              <Link to="/GetApiAxios">GetApiAxios</Link>
             </li>
-           
           </ol>
         </div>
       </div>
