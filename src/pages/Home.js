@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="grid grid-cols-4 gap-2 border-2 px-10">
+      <div className="grid grid-cols-4 gap-2 px-10">
         <div className="">
           <ol className="list-disc ">
             <li className="text-gray-700 my-2">
@@ -18,6 +18,9 @@ const Home = () => {
             </li>
             <li className="text-gray-700 my-2">
               <Link to="/GetApiAxios">GetApiAxios</Link>
+            </li>
+            <li className="text-gray-700 my-2">
+              <Link to="/FormValidation">FormValidation</Link>
             </li>
           </ol>
         </div>

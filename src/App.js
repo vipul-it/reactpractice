@@ -9,6 +9,7 @@ import SearchFilter from "./pages/SearchFilter";
 import GetApi from "./pages/GetApi";
 import GetApiFetch from "./pages/GetApiFetch";
 import GetApiAxios from "./pages/GetApiAxios";
+import FormValidation from "./pages/FormValidation";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/GetApi" element={<GetApi />} />
           <Route path="/GetApiFetch" element={<GetApiFetch />} />
           <Route path="/GetApiAxios" element={<GetApiAxios />} />
+          <Route path="/FormValidation" element={<FormValidation />} />
         </Routes>
       </BrowserRouter>
     </>

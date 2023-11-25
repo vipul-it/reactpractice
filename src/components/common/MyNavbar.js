@@ -28,7 +28,7 @@ export default function MyNavbar() {
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-4 h-4 sm:w-6 sm:h-6"
                       viewBox="0 0 20 20"
-                      fill="currentColor"
+                      fill="white"
                     >
                       <path
                         fillRule="evenodd"
@@ -40,9 +40,9 @@ export default function MyNavbar() {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-4 h-4 sm:w-6 sm:h-6"
-                      fill="none"
+                      fill="white"
                       viewBox="0 0 24 24"
-                      stroke="currentColor"
+                      stroke="white"
                       strokeWidth={2}
                     >
                       <path
@@ -64,55 +64,17 @@ export default function MyNavbar() {
             >
               <ul className="text-decoration-none nav-menu nav-item items-center text-white justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 cursor-pointer ">
                 <li className="font-Roboto capitalize">
-                  <Link
-                    to=""
-                    spy={true}
-                    activeClass="active"
-                    smooth={true}
-                    offset={-100}
-                    duration={800}
-                    className="no-focuse"
-                  >
-                    Home
-                  </Link>
+                  <Link to="">Home</Link>
                 </li>
                 <li className="font-Roboto capitalize">
-                  <Link
-                    to="About"
-                    spy={true}
-                    activeClass="active"
-                    smooth={true}
-                    offset={-50}
-                    duration={800}  
-                  >
-                    About
-                  </Link>
+                  <Link to="About">About</Link>
                 </li>
                 <li className="font-Roboto capitalize ">
-                  <Link
-                    to="Services"
-                    spy={true}
-                    activeClass="active"
-                    smooth={true}
-                    offset={-90}
-                    duration={800}
-                  >
-                    Services
-                  </Link>
+                  <Link to="Services">Services</Link>
                 </li>
                 <li className="font-Roboto capitalize">
-                  <Link
-                    to="Contact"
-                    spy={true}
-                    activeClass="active"
-                    smooth={true}
-                    offset={-50}
-                    duration={800}
-                  >
-                    Contact
-                  </Link>
+                  <Link to="Contact">Contact</Link>
                 </li>
-               
               </ul>
             </div>
           </div>

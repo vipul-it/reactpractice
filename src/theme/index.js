@@ -3,4 +3,5 @@ export const themeColor = {
   Red: "#B31312",
   Orange: "#EA906C",
   Gray: "#EEE2DE",
+  Primary: "#e72e77",
 };
