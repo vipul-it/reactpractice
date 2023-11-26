@@ -1,10 +1,13 @@
 import React from "react";
-import AllPages from "../components/common/AllPages";
+
+import CodePreviewTamplate from "../components/common/CodePreviewTamplate";
 
 const About = () => {
   return (
     <div>
-      <AllPages name="About" />
+      <div>
+ <CodePreviewTamplate />
+      </div>
     </div>
   );
 };

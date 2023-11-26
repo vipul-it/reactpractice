@@ -10,6 +10,8 @@ import GetApi from "./pages/GetApi";
 import GetApiFetch from "./pages/GetApiFetch";
 import GetApiAxios from "./pages/GetApiAxios";
 import FormValidation from "./pages/FormValidation";
+import UseMemoHook from "./pages/UseMemoHook";
+import CodePreview from "./pages/CodePreview";
 
 const App = () => {
   return (
@@ -26,6 +28,8 @@ const App = () => {
           <Route path="/GetApiFetch" element={<GetApiFetch />} />
           <Route path="/GetApiAxios" element={<GetApiAxios />} />
           <Route path="/FormValidation" element={<FormValidation />} />
+          <Route path="/UseMemoHook" element={<UseMemoHook />} />
+          <Route path="/CodePreview" element={<CodePreview />} />
         </Routes>
       </BrowserRouter>
     </>

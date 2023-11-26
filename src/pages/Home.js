@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Home = () => {
   return (
     <>
@@ -22,8 +23,20 @@ const Home = () => {
             <li className="text-gray-700 my-2">
               <Link to="/FormValidation">FormValidation</Link>
             </li>
+            <li className="text-gray-700 my-2">
+              <Link to="/UseMemoHook">Use Memo Hook</Link>
+            </li>
           </ol>
         </div>
+        <div className="">
+          <ol className="list-disc ">
+            <li className="text-gray-700 my-2">
+              <Link to="/CodePreview">Code PreView</Link>
+            </li>
+           
+          </ol>
+        </div>
+        
       </div>
     </>
   );
