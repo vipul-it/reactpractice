@@ -12,16 +12,16 @@ const Home = () => {
               <Link to="/SearchFilter">Search Filter</Link>
             </li>
             <li className="text-gray-700 my-2">
-              <Link to="/GetApi">GetApi</Link>
+              <Link to="/GetApi">Get Api</Link>
             </li>
             <li className="text-gray-700 my-2">
               <Link to="/GetApiFetch">Get Api Fetch</Link>
             </li>
             <li className="text-gray-700 my-2">
-              <Link to="/GetApiAxios">GetApiAxios</Link>
+              <Link to="/GetApiAxios">Get Api Axios</Link>
             </li>
             <li className="text-gray-700 my-2">
-              <Link to="/FormValidation">FormValidation</Link>
+              <Link to="/FormValidation">Form Validation</Link>
             </li>
             <li className="text-gray-700 my-2">
               <Link to="/UseMemoHook">Use Memo Hook</Link>
